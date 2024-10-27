@@ -1,8 +1,8 @@
-# Código da Patinha - Frontend
+# Código da Patinha - Backend
 
 ## Sobre
 
-Repositório destinado a armazenar e documentar o Front-end da solução desenvolvida para a Problemática apresentada no BootCamp da Atlântico 2024.3
+Repositório destinado a armazenar e documentar o Back-end da solução desenvolvida para a Problemática apresentada no BootCamp da Atlântico 2024.3
 
 ## Execução 
 
