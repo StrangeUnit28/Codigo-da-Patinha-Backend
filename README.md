@@ -12,7 +12,7 @@ Espaço destinado a descrever os passos a serem seguidos para execução correta
 
 | Ana Beatriz de Sousa Mertins | Gabriel Porto Osorio | Gian Luccas Pires Medina | Janielson Anjos da Silva | Layane Heloisa de S. B. Conceição | [Rafael Bosi](https://github.com/StrangeUnit28) |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | 
-| Vai ter a foto da pessoa | Vai ter a foto da pessoa | Vai ter a foto da pessoa | Vai ter a foto da pessoa | Vai ter a foto da pessoa | ![Rafael' Photo](https://avatars.githubusercontent.com/u/97995709?v=4) | 
+| ![Ana's Photo](https://avatars.githubusercontent.com/u/118942685?v=4) |  | ![Gian's Photo](https://avatars.githubusercontent.com/u/161531488?v=4) | ![Janielson's Photo](https://avatars.githubusercontent.com/u/72242469?v=4) | ![Layane's Photo](https://avatars.githubusercontent.com/u/143617216?v=4) | ![Rafael's Photo](https://avatars.githubusercontent.com/u/97995709?v=4) | 
 
 ## Histórico de Versão
 
