@@ -38,5 +38,3 @@ model Adocoes {
   Pets        Pets      @relation(fields: [pet_id], references: [id])
   @@map ("ADOCOES")
 }
-
-
