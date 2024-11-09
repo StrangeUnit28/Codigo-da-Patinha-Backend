@@ -14,3 +14,12 @@ model adotantes {
   telefone String  @db.VarChar(14)
   endereco String? @db.VarChar(100)
 }
+
+model pets {
+  id       String  @id @default(dbgenerated("uuid_generate_v4()"))
+  nome     String  @db.VarChar(100)
+  idade    Int
+  descricao String  @db.VarChar(100)
+  status String? @db.VarChar(20)
+}
+
