@@ -71,6 +71,9 @@ O servidor será iniciado e estará disponível no endereço http://localhost:30
 
 ### Endpoints
 A API principal está disponível em http://localhost:3000/api.
+- Endpoint de Adotantes - http://localhost:3000/api/usuario
+- Endpoint de Pet - http://localhost:3000/api/pet
+- Endpoint de Adocao - http://localhost:3000/api/adocao
 
 ### Estrutura do Projeto
 schema.prisma: Define o esquema do banco de dados Prisma.
