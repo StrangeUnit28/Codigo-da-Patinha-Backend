@@ -1,9 +1,9 @@
 import {
     findAllAdoptions,
     findAdoptionById,
-    createAdoption,
-    updateAdoption,
-    deleteAdoption,
+    createAdocao,
+    updateAdocao,
+    deleteAdocao,
 } from "../models/adotantesModel.js";
 
 export const getAllAdoptions = async (req, res) => {
@@ -26,9 +26,9 @@ export const getAdoptionById = async (req, res) => {
 };
 
 export const createAdoption = async (req, res) => {
-    const { nome, email,telefone, endereco} = req.body;
+    const { pet_id, adotante_id, data_adocao } = req.body;
     try {
-        const adocao = await createAdoption({ nome, email, endereco, telefone});
+        const adocao = await createAdocao({ pet_id, adotante_id, data_adocao });
         return res.status(201).json(adocao);
     } catch (error) {
         return res.status(500).json({ error: error.message });
@@ -37,9 +37,9 @@ export const createAdoption = async (req, res) => {
 
 export const updateAdoption = async (req, res) => {
     const { id } = req.params;
-    const { nome, email,telefone, endereco} = req.body;
+    const { pet_id, adotante_id, data_adocao } = req.body;
     try {
-        const adocao = await updateAdoption(id, { nome, email, telefone, endereco });
+        const adocao = await updateAdocao(id, { pet_id, adotante_id, data_adocao });
         return res.status(200).json(adocao);
     } catch (error) {
         return res.status(500).json({ error: error.message });
@@ -49,7 +49,7 @@ export const updateAdoption = async (req, res) => {
 export const deleteAdoption = async (req, res) => {
     const { id } = req.params;
     try {
-        await deleteAdoption(id);
+        await deleteAdocao(id);
         return res.status(200).json({ message: "User deleted successfully" });
     } catch (error) {
         return res.status(500).json({ error: error.message });

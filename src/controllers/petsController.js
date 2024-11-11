@@ -26,9 +26,9 @@ export const getPetById = async (req, res) => {
 };
 
 export const createPet = async (req, res) => {
-    const { nome, idade, descricao, status} = req.body;
+    const { nome, especie, idade, descricao, status} = req.body;
     try {
-        const pet = await createPet({ nome, idade, descricao, status});
+        const pet = await createPet({ nome, especie, idade, descricao, status});
         return res.status(201).json(pet);
     } catch (error) {
         return res.status(500).json({ error: error.message });
@@ -37,9 +37,9 @@ export const createPet = async (req, res) => {
 
 export const updatePet = async (req, res) => {
     const { id } = req.params;
-    const { nome, idade, descricao, status} = req.body;
+    const { nome, especie, idade, descricao, status} = req.body;
     try {
-        const pet = await updatePet(id, { nome, idade, descricao, status });
+        const pet = await updatePet(id, { nome, especie, idade, descricao, status });
         return res.status(200).json(pet);
     } catch (error) {
         return res.status(500).json({ error: error.message });
