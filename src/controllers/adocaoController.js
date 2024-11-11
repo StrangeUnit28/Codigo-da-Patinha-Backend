@@ -4,7 +4,7 @@ import {
     createAdocao,
     updateAdocao,
     deleteAdocao,
-} from "../models/adotantesModel.js";
+} from "../models/adocaoModel.js";
 
 export const getAllAdoptions = async (req, res) => {
     try {

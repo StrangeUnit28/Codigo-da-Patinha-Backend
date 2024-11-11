@@ -11,20 +11,20 @@ export const findAdoptionById = async (id) => {
     });
 };
 
-export const createAdoption = async (data) => {
+export const createAdocao = async (data) => {
     return await prismaClient.adocoes.create({
         data,
     });
 };
 
-export const updateAdoption = async (id, data) => {
+export const updateAdocao = async (id, data) => {
     return await prismaClient.adocoes.update({
         where: { id },
         data,
     });
 };
 
-export const deleteAdoption = async (id) => {
+export const deleteAdocao = async (id) => {
     return await prismaClient.adocoes.delete({
         where: { id },
     });

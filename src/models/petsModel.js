@@ -11,20 +11,20 @@ export const findPetById = async (id) => {
     });
 };
 
-export const createPet = async (data) => {
+export const createPets = async (data) => {
     return await prismaClient.pets.create({
         data,
     });
 };
 
-export const updatePet = async (id, data) => {
+export const updatePets = async (id, data) => {
     return await prismaClient.pets.update({
         where: { id },
         data,
     });
 };
 
-export const deletePet = async (id) => {
+export const deletePets = async (id) => {
     return await prismaClient.pets.delete({
         where: { id },
     });
