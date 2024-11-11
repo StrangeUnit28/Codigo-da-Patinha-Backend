@@ -1,18 +1,18 @@
 import express from "express";
 import {
-  getAllUsuarios,
-  getUsuarioById,
-  createUser,
-  updateUser,
-  deleteUser,
-} from "../controllers/adotantesController.js";
+  getAllAdoptions,
+  getAdoptionById,
+  createAdoption,
+  updateAdoption,
+  deleteAdoption,
+} from "../controllers/adocaoController.js";
 
 const router = express.Router();
 
-router.get("/", getAllUsuarios);
-router.get("/:id", getUsuarioById);
-router.post("/", createUser);
-router.put("/:id", updateUser);
-router.delete("/:id", deleteUser);
+router.get("/", getAllAdoptions);
+router.get("/:id", getAdoptionById);
+router.post("/", createAdoption);
+router.put("/:id", updateAdoption);
+router.delete("/:id", deleteAdoption);
 
 export default router;
